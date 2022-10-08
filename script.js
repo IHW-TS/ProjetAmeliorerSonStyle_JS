@@ -36,14 +36,39 @@ for (let { age, sex } of tabPers) {
     }
 }
 console.log(tabPersF);
-*/
 
-/*
+
 //////Varient 2//////
+
 var c = tabPers.filter((a) => {
   return a.age > 18;
 });
 console.log(c);
+*/
+
+////////////////////////////////////////////////////////////////////////////
+///////////////////  Trier les personnes Mineurs  //////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+/*
+//////Varient 1//////
+
+let tabPersF = [];
+for (let { age, sex } of tabPers) {
+    if ( age < 18 ) {
+        tabPersF.push(age);
+    }
+}
+console.log(tabPersF);
+
+
+//////Varient 2//////
+
+var c = tabPers.filter((a) => {
+  return a.age < 18;
+});
+console.log(c);
+
 */
 
 ////////////////////////////////////////////////////////////////////////////
