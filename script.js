@@ -91,3 +91,22 @@ console.log(c);
 ////////////////////////////////////////////////////////////////////////////
 ////////////////////  Trier les "Dupont" Mineur  ///////////////////////////
 ////////////////////////////////////////////////////////////////////////////
+
+let tabPersF = [];
+for (let { nom, age} of tabPers) {
+    if ( nom == "Dupont" && age < 18) {
+        tabPersF.push(nom, age);
+    }
+}
+console.log(tabPersF);
+
+/*
+//////Varient 2//////
+
+var c = tabPers.filter((a) => {
+  return a.nom == "Dupont";
+});
+console.log(c);
+
+*/
+
